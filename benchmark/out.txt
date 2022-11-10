@@ -1,0 +1,11 @@
+ jsantillana@iMac-de-Juan  ~/work/latam/benchmark   feature/benchmark  wrk -t8 -d45 -c3000 -s config.lua https://zrz5crlv8i.execute-api.us-east-1.amazonaws.com/dev
+Running 45s test @ https://zrz5crlv8i.execute-api.us-east-1.amazonaws.com/dev
+  8 threads and 3000 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   232.31ms  105.58ms 663.96ms   88.58%
+    Req/Sec   261.50    131.30   630.00     69.12%
+  46488 requests in 45.09s, 23.04MB read
+  Socket errors: connect 2758, read 0, write 0, timeout 0
+  Non-2xx or 3xx responses: 41974
+Requests/sec:   1031.07
+Transfer/sec:    523.38KB

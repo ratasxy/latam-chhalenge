@@ -7,6 +7,12 @@ terraform {
   }
 
   required_version = ">= 1.2.0"
+
+  backend "s3" {
+    region = "us-east-1"
+    bucket = "terraform-latam-jsantillana"
+    key = "terraform.tfstate"
+  }
 }
 
 provider "aws" {
