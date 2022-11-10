@@ -5,3 +5,4 @@ latam-files/.ipynb_checkpoints
 terraform.tfstate
 code.zip
 .terraform.lock.hcl
+terraform.tfstate.backup
